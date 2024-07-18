@@ -154,7 +154,7 @@
     </div>
 
     <!-- DROPDOWN AND BUTTONS -->
-    <div class="btn-group my-2 mx-auto">
+    <div class="btn-group-vertical my-2 mx-auto">
       <button type="button" class="btn btn-outline-primary">Flowers</button>
       <button type="button" class="btn btn-outline-success">Vegetables</button>
       <div class="btn-group">
@@ -253,7 +253,7 @@
     </div>
 
     <!-- CARDS -->
-    <div class="card">
+    <div class="card" style="width: 400px">
       <img
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/The_Prime_Minister%2C_Shri_Narendra_Modi_meeting_Mr._Elon_Musk_in_New_York%2C_USA_on_June_20%2C_2023_%282%29_%28cropped%29.jpg/220px-The_Prime_Minister%2C_Shri_Narendra_Modi_meeting_Mr._Elon_Musk_in_New_York%2C_USA_on_June_20%2C_2023_%282%29_%28cropped%29.jpg"
         alt="profile picture"
@@ -282,6 +282,71 @@
       </div>
       <div class="card-footer">Footer</div>
     </div>
+
+    <!-- DROPDOWN -->
+    <div class="dropup dropdown-menu-start dropend my-5">
+      <button
+        type="button"
+        class="btn btn-success dropdown-toggle"
+        data-bs-toggle="dropdown"
+      >
+        Lorem ipsum dolor sit amet.
+      </button>
+      <ul class="dropdown-menu">
+        <li>
+          <h3 class="dropdown-header">Header 1</h3>
+        </li>
+        <li><a href="#" class="dropdown-item active">Item 1</a></li>
+        <li><a href="#" class="dropdown-item">Item 2</a></li>
+        <li>
+          <hr class="dropdown-divider" />
+        </li>
+        <li>
+          <h3 class="dropdown-header">Header 2</h3>
+        </li>
+        <li><a href="#" class="dropdown-item">Item 3</a></li>
+        <li><a href="#" class="dropdown-item disabled">Item 4</a></li>
+        <li><a href="#" class="dropdown-item-text">Lorem, dolor.</a></li>
+        <li><span class="dropdown-item-text">Lorem, ipsum.</span></li>
+      </ul>
+    </div>
+
+    <!-- COLLAPSIBLE -->
+    <div class="my-3">
+      <button
+        data-bs-toggle="collapse"
+        data-bs-target="#info"
+        class="btn btn-lg btn-outline-danger"
+      >
+        More
+      </button>
+      <div id="info" class="collapse show border p-2 my-2 rounded">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil quos
+        exercitationem nostrum modi sunt, voluptatum natus. Explicabo laboriosam
+        nihil eum at dolorum optio hic, eos voluptatem.
+    </div>
+
+    <!-- ACCORDION -->
+     <div id="accordion" class="my-4">
+      <div class="card">
+        <div class="card-header"><a class="collapsed btn" data-bs-toggle="collapse" href="#collapseOne">Click Me 1</a></div>
+        <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+          <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolores optio cupiditate necessitatibus obcaecati doloribus dolorem, impedit voluptas laboriosam, corporis illo amet odit unde iusto facilis, quis pariatur quos quisquam.</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header"><a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">Click Me 2</a></div>
+        <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+          <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolores optio cupiditate necessitatibus obcaecati doloribus dolorem, impedit voluptas laboriosam, corporis illo amet odit unde iusto facilis, quis pariatur quos quisquam.</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header"><a class="btn" data-bs-toggle="collapse" href="#collapseThree">Click Me 3</a></div>
+        <div id="collapseThree" class="collapse show" data-bs-parent="#accordion">
+          <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolores optio cupiditate necessitatibus obcaecati doloribus dolorem, impedit voluptas laboriosam, corporis illo amet odit unde iusto facilis, quis pariatur quos quisquam.</div>
+        </div>
+      </div>
+     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
