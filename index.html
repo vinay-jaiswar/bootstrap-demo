@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body class="container my-5">
     <!-- PROGESS BAR -->
@@ -459,6 +460,109 @@
           <button type="button" class="carousel-control-next" data-bs-target="#demo" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
         </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- MODAL -->
+        <button type="button" class="btn btn-danger my-3" data-bs-toggle="modal" data-bs-target="#modal">More</button>
+
+        <div class="modal fade" id="modal">
+         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-up">
+           <div class="modal-content">
+             <!-- HEADER -->
+             <div class="modal-header">
+               <h4 class="modal-title">Lorem ipsum dolor sit.</h4>
+               <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+             </div>
+
+             <!-- BODY -->
+              <div class="modal-body">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, suscipit.
+              </div>
+
+              <!-- FOOTER -->
+               <div class="modal-footer">
+                 <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+               </div>
+           </div>
+         </div>
+        </div>
+
+        <!-- TOOLTIPS -->
+         <button type="button" class="btn btn-success" data-bs-toggle="tooltip" title="Its working!" data-bs-placement="bottom">Hover Me</button>
+
+         <script>
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+              return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+          </script>
+
+         <!-- POPOVERS -->
+          <button type="button" class="btn btn-warning" data-bs-toggle="popover" title="Popover Heading" data-bs-content="popver content..." data-bs-trigger="hover" data-bs-placement="left">Click ME</button>
+
+          <script>
+            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+              return new bootstrap.Popover(popoverTriggerEl)
+            })
+          </script>
+
+          <!-- TOAST -->
+          <button type="button" class="btn btn-primary" id="toastbtn">Toast</button>
+
+          <div class="toast">
+            <div class="toast-header">
+              <strong class="me-auto">Lorem, ipsum dolor.</strong>
+              <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, fugiat?
+            </div>
+          </div>
+
+          <script>
+            document.getElementById("toastbtn").onclick = function() {
+              var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+              var toastList = toastElList.map(function(toastEl) {
+                return new bootstrap.Toast(toastEl)
+              })
+              toastList.forEach(toast => toast.show())
+            }
+          </script>
+
+          <!-- SCROLLSPY -->
+          <!-- SCROLLABLE AREA -->
+          <div data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50" style="position: relative;">
+
+            <!-- NAVBAR -->
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark justify-content-center">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#section1">section 1</a></li>
+                <li class="nav-item"><a class="nav-link" href="#section2">section 2</a></li>
+              </ul>
+            </nav>
+
+            <!-- SECTIONS -->
+            <div class="bg-warning text-white" style="padding: 50px 10px;" id="section1">
+              <h3>Lorem, ipsum dolor.</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, ipsa.</p>
+            </div>
+            <div class="bg-danger text-white" style="padding: 50px 10px;" id="section2">
+              <h3>Lorem, ipsum dolor.</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, ipsa.</p>
+            </div>
+          </div>
+
+        <!-- OFFCANVAS -->
+         <div class="offcanvas offcanvas-end offcanvas-lg text-bg-dark" id="offcanvas">
+          <div class="offcanvas-header">
+            <h3 class="offcanvas-title">Lorem ipsum dolor sit.</h3>
+            <button type="button" class="btn-close btn-close-white" data-bs-toggle="offcanvas"></button>
+          </div>
+
+          <div class="offcanvas-body">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa natus necessitatibus et non architecto veniam, aliquam voluptatum ducimus dolor expedita!</p>
+          </div>
+         </div>
+
+         <button type="button" class="btn btn-success d-lg-none my-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvas">OFFCANVAS SIDEBAR</button>
   </body>
 </html>
