@@ -1,568 +1,683 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  </head>
-  <body class="container my-5">
-    <!-- PROGESS BAR -->
-    <div class="progress my-4" style="height: 20px">
-      <div
-        class="progress-bar progress-bar-striped progress-bar-animated bg-primary"
-        style="width: 69%"
-      >
-        69%
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="container my-5">
+  <!-- PROGESS BAR -->
+  <div class="progress my-4" style="height: 20px">
+    <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" style="width: 69%">
+      69%
+    </div>
+  </div>
+
+  <!-- MULTIPLE PROGRESS BAR -->
+  <div class="progress my-4" style="height: 20px">
+    <div class="progress-bar" style="width: 31%">Downloaded</div>
+    <div class="progress-bar bg-success" style="width: 28%">Uploaded</div>
+    <div class="progress-bar bg-secondary" style="width: 33%">Installed</div>
+  </div>
+
+  <!-- ALERT NOTIFICATION -->
+  <div class="alert alert-success alert-dismissible fade show">
+    <strong>Success!</strong> Indicates a successful or positive action.
+    <button type="button" class="btn-close float-end" data-bs-dismiss="alert"></button>
+  </div>
+
+  <!-- BADGE -->
+  <div class="my-4">
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      <span class="badge bg-danger">New</span>
+    </p>
+  </div>
+
+  <!-- FULL WIDTH MULTIPLE BUTTONS -->
+  <div class="my-2 d-grid gap-2">
+    <button class="btn btn-outline-secondary btn-sm active" type="button">
+      Print
+    </button>
+    <button class="btn btn-outline-success btn-sm disabled" type="button">
+      Download
+    </button>
+    <button class="btn btn-outline-danger btn-sm disabled" type="button">
+      <span class="spinner-border spinner-border-sm"></span>
+      Loading
+    </button>
+  </div>
+
+  <!-- TEXT -->
+  <div class="container border">
+    <p class="text-muted">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, unde?
+    </p>
+    <p class="text-info">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, unde?
+    </p>
+    <p class="text-black-50 text-bg-info">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, unde?
+    </p>
+  </div>
+
+  <!-- HEADINGS -->
+  <div class="border my-2 text-center p-2">
+    <h1>Normal Heading</h1>
+    <p class="display-1">
+      <small class="small">.small Display heading</small>
+    </p>
+    <p class="display-1">Display heading</p>
+  </div>
+
+  <!-- COLUMNS -->
+  <div class="row">
+    <div class="col-md-4 border">col-md-4</div>
+    <div class="col-md-2 border">col-md-2</div>
+    <div class="col-md-2 border">col-md-2</div>
+    <div class="col-md-4 border">col-md-4</div>
+  </div>
+
+  <!-- PARAGRAPH -->
+  <div class="border my-2 p-2 text-capitalize text-break bg-success">
+    <p class="lead text-white">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolores
+      sit excepturi rerum sapiente incidunt aliquid molestiae a maxime, enim
+      temporibus? Excepturi, officia corrupti temporibus magnam et voluptatem
+      inventore beatae aliquid ratione sapiente, ipsum rerum, ullam recusandae
+      dolore delectus. Aliquid, laudantium necessitatibus! Accusamus autem
+      impedit repellendus tempore, sit incidunt in labore sint quidem
+      consequuntur, illo tenetur vel aspernatur fugiat beatae. Accusantium
+      quod, non odit hic quam ipsum eum quae libero porro magnam quaerat et
+      vero totam quasi quisquam aliquam animi quo doloribus eligendi! Officiis
+      reiciendis iste, nostrum impedit doloribus cumque, alias eligendi
+      distinctio explicabo nemo perferendis, inventore quas dolor laborum?
+    </p>
+
+    <!-- LIST -->
+    <ul class="list-inline">
+      <li class="list-inline-item">List Item</li>
+      <li class="list-inline-item">List Item</li>
+      <li class="list-inline-item">List Item</li>
+    </ul>
+  </div>
+
+  <!-- TABLE -->
+  <div class="table-responsive-sm">
+    <table class="table table-striped table-bordered table-hover my-3">
+      <thead class="table-info">
+        <tr>
+          <th>Name</th>
+          <th>Gender</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Saitama</td>
+          <td>Male</td>
+          <td>21</td>
+        </tr>
+        <tr>
+          <td>Genos</td>
+          <td>Male</td>
+          <td>21</td>
+        </tr>
+        <tr>
+          <td>Vinay</td>
+          <td>Male</td>
+          <td>21</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- IMAGE -->
+  <div>
+    <img class="img-thumbnail mx-auto d-block"
+      src="https://st4.depositphotos.com/28053878/40397/i/450/depositphotos_403977870-stock-photo-mysterious-green-forest-rain-small.jpg"
+      alt="nature" width="500px" />
+  </div>
+
+  <!-- DROPDOWN AND BUTTONS -->
+  <div class="btn-group-vertical my-2 mx-auto">
+    <button type="button" class="btn btn-outline-primary">Flowers</button>
+    <button type="button" class="btn btn-outline-success">Vegetables</button>
+    <div class="btn-group">
+      <button type="button" class="btn btn-outline-danger dropdown-toggle" data-bs-toggle="dropdown">
+        Fruits
+      </button>
+      <div class="dropdown-menu">
+        <button type="button" class="dropdown-item">Apples</button>
+        <button type="button" class="dropdown-item">Grapes</button>
+        <button type="button" class="dropdown-item">Pears</button>
       </div>
     </div>
+  </div>
 
-    <!-- MULTIPLE PROGRESS BAR -->
-    <div class="progress my-4" style="height: 20px">
-      <div class="progress-bar" style="width: 31%">Downloaded</div>
-      <div class="progress-bar bg-success" style="width: 28%">Uploaded</div>
-      <div class="progress-bar bg-secondary" style="width: 33%">Installed</div>
-    </div>
+  <!-- SPINNER/LOADING -->
+  <div class="m-4">
+    <button class="btn btn-success" type="button">
+      <span class="spinner-border spinner-border-sm"></span>
+      Loading
+    </button>
+    <button class="btn btn-danger" type="button">
+      <span class="spinner-grow spinner-grow-sm"></span>
+      Loading
+    </button>
+  </div>
 
-    <!-- ALERT NOTIFICATION -->
-    <div class="alert alert-success alert-dismissible fade show">
-      <strong>Success!</strong> Indicates a successful or positive action.
-      <button
-        type="button"
-        class="btn-close float-end"
-        data-bs-dismiss="alert"
-      ></button>
-    </div>
+  <!-- PAGINATION -->
+  <ul class="pagination pagination-lg justify-content-center">
+    <li class="page-item disabled">
+      <a href="#" class="page-link">Previous</a>
+    </li>
+    <li class="page-item active"><a href="#" class="page-link">1</a></li>
+    <li class="page-item"><a href="#" class="page-link">2</a></li>
+    <li class="page-item"><a href="#" class="page-link">3</a></li>
+    <li class="page-item"><a href="#" class="page-link">Next</a></li>
+  </ul>
 
-    <!-- BADGE -->
-    <div class="my-4">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        <span class="badge bg-danger">New</span>
+  <!-- BREADCRUMBS -->
+  <ul class="breadcrumb justify-content-center my-4">
+    <li class="breadcrumb-item">
+      <a href="#" class="breadcrumb-link">Home</a>
+    </li>
+    <li class="breadcrumb-item">
+      <a href="#" class="breadcrumb-link">Sports</a>
+    </li>
+    <li class="breadcrumb-item">
+      <a href="#" class="breadcrumb-link">Cricket</a>
+    </li>
+    <li class="breadcrumb-item">
+      <a href="#" class="breadcrumb-link">IPL</a>
+    </li>
+    <li class="breadcrumb-item active">IPL 2024</li>
+  </ul>
+
+  <!-- LIST GROUP -->
+  <ul class="list-group list-group-flush list-group-numbered list-group-horizontal my-2">
+    <li class="list-group-item list-group-item-warning list-group-item-action">
+      Item 1
+    </li>
+    <li class="list-group-item list-group-item-warning list-group-item-action active">
+      Item 2
+    </li>
+    <li class="list-group-item list-group-item-warning list-group-item-action disabled">
+      Item 3
+    </li>
+  </ul>
+
+  <div class="list-group my-4">
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      Inbox <span class="badge bg-secondary rounded-pill">63</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      Sent <span class="badge bg-secondary rounded-pill">82</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      Drafts <span class="badge bg-secondary rounded-pill">14</span>
+    </li>
+  </div>
+
+  <!-- CARDS -->
+  <div class="card" style="width: 400px">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/The_Prime_Minister%2C_Shri_Narendra_Modi_meeting_Mr._Elon_Musk_in_New_York%2C_USA_on_June_20%2C_2023_%282%29_%28cropped%29.jpg/220px-The_Prime_Minister%2C_Shri_Narendra_Modi_meeting_Mr._Elon_Musk_in_New_York%2C_USA_on_June_20%2C_2023_%282%29_%28cropped%29.jpg"
+      alt="profile picture" class="card-img-top" />
+    <div class="card-header">Heading</div>
+    <div class="card-body card-img-overlay">
+      <h2 class="card-title">Elon Reeve Musk</h2>
+      <p class="card-text">
+        Elon Reeve Musk (/ˈiːlɒn/; born June 28, 1971) is a businessman and
+        investor known for his key roles in space company SpaceX and
+        automotive company Tesla, Inc. Other involvements include ownership of
+        X Corp., formerly Twitter, and his role in the founding of The Boring
+        Company, xAI, Neuralink and OpenAI. He is one of the wealthiest people
+        in the world; as of July 2024, Forbes estimates his net worth to be
+        US$221 billion.
       </p>
+      <a href="https://en.wikipedia.org/wiki/Elon_Musk" class="card-link">Wikipedia</a>
+      <a href="https://twitter.com/elonmusk?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+        class="card-link">Twitter</a>
     </div>
+    <div class="card-footer">Footer</div>
+  </div>
 
-    <!-- FULL WIDTH MULTIPLE BUTTONS -->
-    <div class="my-2 d-grid gap-2">
-      <button class="btn btn-outline-secondary btn-sm active" type="button">
-        Print
-      </button>
-      <button class="btn btn-outline-success btn-sm disabled" type="button">
-        Download
-      </button>
-      <button class="btn btn-outline-danger btn-sm disabled" type="button">
-        <span class="spinner-border spinner-border-sm"></span>
-        Loading
-      </button>
-    </div>
-
-    <!-- TEXT -->
-    <div class="container border">
-      <p class="text-muted">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, unde?
-      </p>
-      <p class="text-info">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, unde?
-      </p>
-      <p class="text-black-50 text-bg-info">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, unde?
-      </p>
-    </div>
-
-    <!-- HEADINGS -->
-    <div class="border my-2 text-center p-2">
-      <h1>Normal Heading</h1>
-      <p class="display-1">
-        <small class="small">.small Display heading</small>
-      </p>
-      <p class="display-1">Display heading</p>
-    </div>
-
-    <!-- COLUMNS -->
-    <div class="row">
-      <div class="col-md-4 border">col-md-4</div>
-      <div class="col-md-2 border">col-md-2</div>
-      <div class="col-md-2 border">col-md-2</div>
-      <div class="col-md-4 border">col-md-4</div>
-    </div>
-
-    <!-- PARAGRAPH -->
-    <div class="border my-2 p-2 text-capitalize text-break bg-success">
-      <p class="lead text-white">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolores
-        sit excepturi rerum sapiente incidunt aliquid molestiae a maxime, enim
-        temporibus? Excepturi, officia corrupti temporibus magnam et voluptatem
-        inventore beatae aliquid ratione sapiente, ipsum rerum, ullam recusandae
-        dolore delectus. Aliquid, laudantium necessitatibus! Accusamus autem
-        impedit repellendus tempore, sit incidunt in labore sint quidem
-        consequuntur, illo tenetur vel aspernatur fugiat beatae. Accusantium
-        quod, non odit hic quam ipsum eum quae libero porro magnam quaerat et
-        vero totam quasi quisquam aliquam animi quo doloribus eligendi! Officiis
-        reiciendis iste, nostrum impedit doloribus cumque, alias eligendi
-        distinctio explicabo nemo perferendis, inventore quas dolor laborum?
-      </p>
-
-      <!-- LIST -->
-      <ul class="list-inline">
-        <li class="list-inline-item">List Item</li>
-        <li class="list-inline-item">List Item</li>
-        <li class="list-inline-item">List Item</li>
-      </ul>
-    </div>
-
-    <!-- TABLE -->
-    <div class="table-responsive-sm">
-      <table class="table table-striped table-bordered table-hover my-3">
-        <thead class="table-info">
-          <tr>
-            <th>Name</th>
-            <th>Gender</th>
-            <th>Age</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Saitama</td>
-            <td>Male</td>
-            <td>21</td>
-          </tr>
-          <tr>
-            <td>Genos</td>
-            <td>Male</td>
-            <td>21</td>
-          </tr>
-          <tr>
-            <td>Vinay</td>
-            <td>Male</td>
-            <td>21</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <!-- IMAGE -->
-    <div>
-      <img
-        class="img-thumbnail mx-auto d-block"
-        src="https://st4.depositphotos.com/28053878/40397/i/450/depositphotos_403977870-stock-photo-mysterious-green-forest-rain-small.jpg"
-        alt="nature"
-        width="500px"
-      />
-    </div>
-
-    <!-- DROPDOWN AND BUTTONS -->
-    <div class="btn-group-vertical my-2 mx-auto">
-      <button type="button" class="btn btn-outline-primary">Flowers</button>
-      <button type="button" class="btn btn-outline-success">Vegetables</button>
-      <div class="btn-group">
-        <button
-          type="button"
-          class="btn btn-outline-danger dropdown-toggle"
-          data-bs-toggle="dropdown"
-        >
-          Fruits
-        </button>
-        <div class="dropdown-menu">
-          <button type="button" class="dropdown-item">Apples</button>
-          <button type="button" class="dropdown-item">Grapes</button>
-          <button type="button" class="dropdown-item">Pears</button>
-        </div>
-      </div>
-    </div>
-
-    <!-- SPINNER/LOADING -->
-    <div class="m-4">
-      <button class="btn btn-success" type="button">
-        <span class="spinner-border spinner-border-sm"></span>
-        Loading
-      </button>
-      <button class="btn btn-danger" type="button">
-        <span class="spinner-grow spinner-grow-sm"></span>
-        Loading
-      </button>
-    </div>
-
-    <!-- PAGINATION -->
-    <ul class="pagination pagination-lg justify-content-center">
-      <li class="page-item disabled">
-        <a href="#" class="page-link">Previous</a>
+  <!-- DROPDOWN -->
+  <div class="dropup dropdown-menu-start dropend my-5">
+    <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">
+      Lorem ipsum dolor sit amet.
+    </button>
+    <ul class="dropdown-menu">
+      <li>
+        <h3 class="dropdown-header">Header 1</h3>
       </li>
-      <li class="page-item active"><a href="#" class="page-link">1</a></li>
-      <li class="page-item"><a href="#" class="page-link">2</a></li>
-      <li class="page-item"><a href="#" class="page-link">3</a></li>
-      <li class="page-item"><a href="#" class="page-link">Next</a></li>
+      <li><a href="#" class="dropdown-item active">Item 1</a></li>
+      <li><a href="#" class="dropdown-item">Item 2</a></li>
+      <li>
+        <hr class="dropdown-divider" />
+      </li>
+      <li>
+        <h3 class="dropdown-header">Header 2</h3>
+      </li>
+      <li><a href="#" class="dropdown-item">Item 3</a></li>
+      <li><a href="#" class="dropdown-item disabled">Item 4</a></li>
+      <li><a href="#" class="dropdown-item-text">Lorem, dolor.</a></li>
+      <li><span class="dropdown-item-text">Lorem, ipsum.</span></li>
     </ul>
+  </div>
 
-    <!-- BREADCRUMBS -->
-    <ul class="breadcrumb justify-content-center my-4">
-      <li class="breadcrumb-item">
-        <a href="#" class="breadcrumb-link">Home</a>
-      </li>
-      <li class="breadcrumb-item">
-        <a href="#" class="breadcrumb-link">Sports</a>
-      </li>
-      <li class="breadcrumb-item">
-        <a href="#" class="breadcrumb-link">Cricket</a>
-      </li>
-      <li class="breadcrumb-item">
-        <a href="#" class="breadcrumb-link">IPL</a>
-      </li>
-      <li class="breadcrumb-item active">IPL 2024</li>
-    </ul>
-
-    <!-- LIST GROUP -->
-    <ul
-      class="list-group list-group-flush list-group-numbered list-group-horizontal my-2"
-    >
-      <li
-        class="list-group-item list-group-item-warning list-group-item-action"
-      >
-        Item 1
-      </li>
-      <li
-        class="list-group-item list-group-item-warning list-group-item-action active"
-      >
-        Item 2
-      </li>
-      <li
-        class="list-group-item list-group-item-warning list-group-item-action disabled"
-      >
-        Item 3
-      </li>
-    </ul>
-
-    <div class="list-group my-4">
-      <li
-        class="list-group-item d-flex justify-content-between align-items-center"
-      >
-        Inbox <span class="badge bg-secondary rounded-pill">63</span>
-      </li>
-      <li
-        class="list-group-item d-flex justify-content-between align-items-center"
-      >
-        Sent <span class="badge bg-secondary rounded-pill">82</span>
-      </li>
-      <li
-        class="list-group-item d-flex justify-content-between align-items-center"
-      >
-        Drafts <span class="badge bg-secondary rounded-pill">14</span>
-      </li>
-    </div>
-
-    <!-- CARDS -->
-    <div class="card" style="width: 400px">
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/The_Prime_Minister%2C_Shri_Narendra_Modi_meeting_Mr._Elon_Musk_in_New_York%2C_USA_on_June_20%2C_2023_%282%29_%28cropped%29.jpg/220px-The_Prime_Minister%2C_Shri_Narendra_Modi_meeting_Mr._Elon_Musk_in_New_York%2C_USA_on_June_20%2C_2023_%282%29_%28cropped%29.jpg"
-        alt="profile picture"
-        class="card-img-top"
-      />
-      <div class="card-header">Heading</div>
-      <div class="card-body card-img-overlay">
-        <h2 class="card-title">Elon Reeve Musk</h2>
-        <p class="card-text">
-          Elon Reeve Musk (/ˈiːlɒn/; born June 28, 1971) is a businessman and
-          investor known for his key roles in space company SpaceX and
-          automotive company Tesla, Inc. Other involvements include ownership of
-          X Corp., formerly Twitter, and his role in the founding of The Boring
-          Company, xAI, Neuralink and OpenAI. He is one of the wealthiest people
-          in the world; as of July 2024, Forbes estimates his net worth to be
-          US$221 billion.
-        </p>
-        <a href="https://en.wikipedia.org/wiki/Elon_Musk" class="card-link"
-          >Wikipedia</a
-        >
-        <a
-          href="https://twitter.com/elonmusk?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-          class="card-link"
-          >Twitter</a
-        >
-      </div>
-      <div class="card-footer">Footer</div>
-    </div>
-
-    <!-- DROPDOWN -->
-    <div class="dropup dropdown-menu-start dropend my-5">
-      <button
-        type="button"
-        class="btn btn-success dropdown-toggle"
-        data-bs-toggle="dropdown"
-      >
-        Lorem ipsum dolor sit amet.
-      </button>
-      <ul class="dropdown-menu">
-        <li>
-          <h3 class="dropdown-header">Header 1</h3>
-        </li>
-        <li><a href="#" class="dropdown-item active">Item 1</a></li>
-        <li><a href="#" class="dropdown-item">Item 2</a></li>
-        <li>
-          <hr class="dropdown-divider" />
-        </li>
-        <li>
-          <h3 class="dropdown-header">Header 2</h3>
-        </li>
-        <li><a href="#" class="dropdown-item">Item 3</a></li>
-        <li><a href="#" class="dropdown-item disabled">Item 4</a></li>
-        <li><a href="#" class="dropdown-item-text">Lorem, dolor.</a></li>
-        <li><span class="dropdown-item-text">Lorem, ipsum.</span></li>
-      </ul>
-    </div>
-
-    <!-- COLLAPSIBLE -->
-    <div class="my-3">
-      <button
-        data-bs-toggle="collapse"
-        data-bs-target="#info"
-        class="btn btn-lg btn-outline-danger"
-      >
-        More
-      </button>
-      <div id="info" class="collapse show border p-2 my-2 rounded">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil quos
-        exercitationem nostrum modi sunt, voluptatum natus. Explicabo laboriosam
-        nihil eum at dolorum optio hic, eos voluptatem.
+  <!-- COLLAPSIBLE -->
+  <div class="my-3">
+    <button data-bs-toggle="collapse" data-bs-target="#info" class="btn btn-lg btn-outline-danger">
+      More
+    </button>
+    <div id="info" class="collapse show border p-2 my-2 rounded">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil quos
+      exercitationem nostrum modi sunt, voluptatum natus. Explicabo laboriosam
+      nihil eum at dolorum optio hic, eos voluptatem.
     </div>
 
     <!-- ACCORDION -->
-     <div id="accordion" class="my-4">
+    <div id="accordion" class="my-4">
       <div class="card">
-        <div class="card-header"><a class="collapsed btn" data-bs-toggle="collapse" href="#collapseOne">Click Me 1</a></div>
+        <div class="card-header"><a class="collapsed btn" data-bs-toggle="collapse" href="#collapseOne">Click Me 1</a>
+        </div>
         <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
-          <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolores optio cupiditate necessitatibus obcaecati doloribus dolorem, impedit voluptas laboriosam, corporis illo amet odit unde iusto facilis, quis pariatur quos quisquam.</div>
+          <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolores optio cupiditate
+            necessitatibus obcaecati doloribus dolorem, impedit voluptas laboriosam, corporis illo amet odit unde iusto
+            facilis, quis pariatur quos quisquam.</div>
         </div>
       </div>
       <div class="card">
-        <div class="card-header"><a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">Click Me 2</a></div>
+        <div class="card-header"><a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">Click Me 2</a>
+        </div>
         <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
-          <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolores optio cupiditate necessitatibus obcaecati doloribus dolorem, impedit voluptas laboriosam, corporis illo amet odit unde iusto facilis, quis pariatur quos quisquam.</div>
+          <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolores optio cupiditate
+            necessitatibus obcaecati doloribus dolorem, impedit voluptas laboriosam, corporis illo amet odit unde iusto
+            facilis, quis pariatur quos quisquam.</div>
         </div>
       </div>
       <div class="card">
         <div class="card-header"><a class="btn" data-bs-toggle="collapse" href="#collapseThree">Click Me 3</a></div>
         <div id="collapseThree" class="collapse show" data-bs-parent="#accordion">
-          <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolores optio cupiditate necessitatibus obcaecati doloribus dolorem, impedit voluptas laboriosam, corporis illo amet odit unde iusto facilis, quis pariatur quos quisquam.</div>
+          <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolores optio cupiditate
+            necessitatibus obcaecati doloribus dolorem, impedit voluptas laboriosam, corporis illo amet odit unde iusto
+            facilis, quis pariatur quos quisquam.</div>
         </div>
       </div>
-     </div>
+    </div>
+  </div>
 
-     <!-- NAV -->
-      <ul class="nav nav-tabs justify-content-center nav-justified">
-        <li class="nav-item"><a href="#tab1" class="nav-link active" data-bs-toggle="tab">Link 1</a></li>
-        <li class="nav-item dropdown">
-          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Link 2</a>
+  <!-- NAV -->
+  <ul class="nav nav-tabs justify-content-center nav-justified">
+    <li class="nav-item"><a href="#tab1" class="nav-link active" data-bs-toggle="tab">Link 1</a></li>
+    <li class="nav-item dropdown">
+      <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Link 2</a>
+      <ul class="dropdown-menu">
+        <li><a href="#" class="dropdown-item">Dropdown Item</a></li>
+        <li><a href="#" class="dropdown-item">Dropdown Item</a></li>
+        <li><a href="#" class="dropdown-item">Dropdown Item</a></li>
+        <li><a href="#" class="dropdown-item">Dropdown Item</a></li>
+      </ul>
+    </li>
+    <li class="nav-item"><a href="#tab2" class="nav-link disabled" data-bs-toggle="tab">Link 3</a></li>
+    <li class="nav-item"><a href="#tab3" class="nav-link" data-bs-toggle="tab">Link 4</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div class="tab-pane active" id="tab1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab ipsam
+      distinctio labore molestiae perferendis expedita quidem adipisci vel tempora minus!</div>
+    <div class="tab-pane fade" id="tab2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab ipsam distinctio
+      labore molestiae perferendis expedita quidem adipisci vel tempora minus!</div>
+    <div class="tab-pane fade" id="tab3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab ipsam distinctio
+      labore molestiae perferendis expedita quidem adipisci vel tempora minus!</div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-sm navbar-light justify-content-center bg-light my-4">
+    <a href="#" class="navbar-brand"><img src="https://pngimg.com/uploads/amazon/amazon_PNG7.png" alt="logo"
+        width="80px"></a>
+    <ul class="navbar-nav">
+      <li class="nav-item p-1 text-center m-1"><a href="#" class="nav-link active">Home</a></li>
+      <li class="nav-item p-1 text-center m-1"><a href="#" class="nav-link">Features</a></li>
+      <li class="nav-item p-1 text-center m-1"><a href="#" class="nav-link disabled">Contact Us</a></li>
+      <li class="nav-item p-1 text-center m-1"><a href="#" class="nav-link">About Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- COLLAPSABLE NAVBAR -->
+  <nav class="navbar navbar-expand-sm bg-light p-2 my-4">
+    <a href="#" class="navbar-brand"><img src="https://pngimg.com/uploads/amazon/amazon_PNG7.png" alt="logo"
+        width="80px"></a>
+    <button type="button" class="navbar-toggler" data-bs-target="#nav" data-bs-toggle="collapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav">
+        <li class="nav-item p-1 text-center m-1"><a href="#" class="nav-link active">Home</a></li>
+        <li class="nav-item p-1 text-center m-1"><a href="#" class="nav-link">Features</a></li>
+        <li class="nav-item p-1 text-center m-1 dropdown">
+          <a href="#" role="button" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pricing</a>
           <ul class="dropdown-menu">
-            <li><a href="#" class="dropdown-item">Dropdown Item</a></li>
-            <li><a href="#" class="dropdown-item">Dropdown Item</a></li>
-            <li><a href="#" class="dropdown-item">Dropdown Item</a></li>
-            <li><a href="#" class="dropdown-item">Dropdown Item</a></li>
+            <li><a href="#" class="dropdown-item">$99</a></li>
+            <li><a href="#" class="dropdown-item">$199</a></li>
+            <li><a href="#" class="dropdown-item">$299</a></li>
           </ul>
         </li>
-        <li class="nav-item"><a href="#tab2" class="nav-link disabled" data-bs-toggle="tab">Link 3</a></li>
-        <li class="nav-item"><a href="#tab3" class="nav-link" data-bs-toggle="tab">Link 4</a></li>
       </ul>
+    </div>
+  </nav>
 
-      <div class="tab-content">
-        <div class="tab-pane active" id="tab1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab ipsam distinctio labore molestiae perferendis expedita quidem adipisci vel tempora minus!</div>
-        <div class="tab-pane fade" id="tab2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab ipsam distinctio labore molestiae perferendis expedita quidem adipisci vel tempora minus!</div>
-        <div class="tab-pane fade" id="tab3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab ipsam distinctio labore molestiae perferendis expedita quidem adipisci vel tempora minus!</div>
+  <!-- NAVBAR WITH SEARCH -->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-3 fixed-top">
+    <a href="#" class="navbar-brand"><img src="https://zeevector.com/wp-content/uploads/Amazon-Logo-White@zeevector.png"
+        alt="logo" width="80px"></a>
+    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navSecond"><span
+        class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse justify-content-between" id="navSecond">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a href="#" class="nav-link">Links</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Links</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Links</a></li>
+      </ul>
+      <form action="#" class="d-flex">
+        <input type="text" class="form-control me-2" placeholder="Search">
+        <button type="button" class="btn btn-outline-light">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <!-- CAROUSEL -->
+  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+    <!-- INDICATORS -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://wallpapers.com/images/featured/saitama-zkv7j9bv6z0ybezc.jpg" alt="img" class="d-block w-100">
+        <div class="carousel-caption text-danger">
+          <h2>Saitama</h2>
+          <p>Saitama is a fictional character who is the titular protagonist of the Japanese manga and Anime series
+            One-Punch Man created by One.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://c.wallhere.com/photos/0d/11/Saitama_One_Punch_Man_anime-1793239.jpg!d" alt="img"
+          class="d-block w-100">
+        <div class="carousel-caption text-danger">
+          <h2>Saitama</h2>
+          <p>Saitama is a fictional character who is the titular protagonist of the Japanese manga and Anime series
+            One-Punch Man created by One.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.alphacoders.com/661/661650.jpg" alt="img" class="d-block w-100">
+        <div class="carousel-caption text-danger">
+          <h2>Saitama</h2>
+          <p>Saitama is a fictional character who is the titular protagonist of the Japanese manga and Anime series
+            One-Punch Man created by One.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTROLS -->
+    <button type="button" class="carousel-control-prev" data-bs-target="#demo" data-bs-slide="prev"><span
+        class="carousel-control-prev-icon"></span></button>
+    <button type="button" class="carousel-control-next" data-bs-target="#demo" data-bs-slide="next"><span
+        class="carousel-control-next-icon"></span></button>
+  </div>
+
+  <!-- MODAL -->
+  <button type="button" class="btn btn-danger my-3" data-bs-toggle="modal" data-bs-target="#modal">More</button>
+
+  <div class="modal fade" id="modal">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-up">
+      <div class="modal-content">
+        <!-- HEADER -->
+        <div class="modal-header">
+          <h4 class="modal-title">Lorem ipsum dolor sit.</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!-- BODY -->
+        <div class="modal-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, suscipit.
+        </div>
+
+        <!-- FOOTER -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOOLTIPS -->
+  <button type="button" class="btn btn-success" data-bs-toggle="tooltip" title="Its working!"
+    data-bs-placement="bottom">Hover Me</button>
+
+  <script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+  </script>
+
+  <!-- POPOVERS -->
+  <button type="button" class="btn btn-warning" data-bs-toggle="popover" title="Popover Heading"
+    data-bs-content="popver content..." data-bs-trigger="hover" data-bs-placement="left">Click ME</button>
+
+  <script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl)
+    })
+  </script>
+
+  <!-- TOAST -->
+  <button type="button" class="btn btn-primary" id="toastbtn">Toast</button>
+
+  <div class="toast">
+    <div class="toast-header">
+      <strong class="me-auto">Lorem, ipsum dolor.</strong>
+      <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+    </div>
+    <div class="toast-body">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, fugiat?
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("toastbtn").onclick = function () {
+      var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+      var toastList = toastElList.map(function (toastEl) {
+        return new bootstrap.Toast(toastEl)
+      })
+      toastList.forEach(toast => toast.show())
+    }
+  </script>
+
+  <!-- SCROLLSPY -->
+  <!-- SCROLLABLE AREA -->
+  <div data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50" style="position: relative;">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark justify-content-center">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#section1">section 1</a></li>
+        <li class="nav-item"><a class="nav-link" href="#section2">section 2</a></li>
+      </ul>
+    </nav>
+
+    <!-- SECTIONS -->
+    <div class="bg-warning text-white" style="padding: 50px 10px;" id="section1">
+      <h3>Lorem, ipsum dolor.</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, ipsa.</p>
+    </div>
+    <div class="bg-danger text-white" style="padding: 50px 10px;" id="section2">
+      <h3>Lorem, ipsum dolor.</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, ipsa.</p>
+    </div>
+  </div>
+
+  <!-- OFFCANVAS -->
+  <div class="offcanvas offcanvas-end offcanvas-lg text-bg-dark" id="offcanvas">
+    <div class="offcanvas-header">
+      <h3 class="offcanvas-title">Lorem ipsum dolor sit.</h3>
+      <button type="button" class="btn-close btn-close-white" data-bs-toggle="offcanvas"></button>
+    </div>
+
+    <div class="offcanvas-body">
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa natus necessitatibus et non architecto
+        veniam, aliquam voluptatum ducimus dolor expedita!</p>
+    </div>
+  </div>
+
+  <!-- Aspect ratio 21:9 -->
+  <div class="ratio ratio-21x9">
+    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+  </div>
+
+  <button type="button" class="btn btn-success d-lg-none my-3" data-bs-toggle="offcanvas"
+    data-bs-target="#offcanvas">OFFCANVAS SIDEBAR</button>
+
+  <!-- FORM -->
+  <div class="my-3">
+    <form action="#">
+      <!-- BASIC INPUTS -->
+      <div class="row">
+        <div class="my-2 col">
+          <label for="username" class="form-label">Username:</label>
+          <input type="text" class="form-control form-control-sm" placeholder="form-control-sm disabled" disabled
+            id="username">
+        </div>
+
+        <div class="my-2 col">
+          <label for="password" class="form-label">Password:</label>
+          <input type="password" class="form-control form-control-lg" placeholder="form-control-lg readonly" readonly
+            id="password">
+        </div>
       </div>
 
-      <!-- NAVBAR -->
-       <nav class="navbar navbar-expand-sm navbar-light justify-content-center bg-light my-4">
-        <a href="#" class="navbar-brand"><img src="https://pngimg.com/uploads/amazon/amazon_PNG7.png" alt="logo" width="80px"></a>
-        <ul class="navbar-nav">
-            <li class="nav-item p-1 text-center m-1"><a href="#" class="nav-link active">Home</a></li>
-            <li class="nav-item p-1 text-center m-1"><a href="#" class="nav-link">Features</a></li>
-            <li class="nav-item p-1 text-center m-1"><a href="#" class="nav-link disabled">Contact Us</a></li>
-            <li class="nav-item p-1 text-center m-1"><a href="#" class="nav-link">About Us</a></li>
-          </ul>
-      </nav>
-
-      <!-- COLLAPSABLE NAVBAR -->
-      <nav class="navbar navbar-expand-sm bg-light p-2 my-4">
-        <a href="#" class="navbar-brand"><img src="https://pngimg.com/uploads/amazon/amazon_PNG7.png" alt="logo" width="80px"></a>
-        <button type="button" class="navbar-toggler" data-bs-target="#nav" data-bs-toggle="collapse">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="nav">
-          <ul class="navbar-nav">
-            <li class="nav-item p-1 text-center m-1"><a href="#" class="nav-link active">Home</a></li>
-            <li class="nav-item p-1 text-center m-1"><a href="#" class="nav-link">Features</a></li>
-            <li class="nav-item p-1 text-center m-1 dropdown">
-              <a href="#" role="button" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pricing</a>
-              <ul class="dropdown-menu">
-                <li><a href="#" class="dropdown-item">$99</a></li>
-                <li><a href="#" class="dropdown-item">$199</a></li>
-                <li><a href="#" class="dropdown-item">$299</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-      <!-- NAVBAR WITH SEARCH -->
-       <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-3 fixed-top">
-        <a href="#" class="navbar-brand"><img src="https://zeevector.com/wp-content/uploads/Amazon-Logo-White@zeevector.png" alt="logo" width="80px"></a>
-        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navSecond"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse justify-content-between" id="navSecond">
-          <ul class="navbar-nav">
-            <li class="nav-item"><a href="#" class="nav-link">Links</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Links</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Links</a></li>
-          </ul>
-          <form action="#" class="d-flex">
-            <input type="text" class="form-control me-2" placeholder="Search">
-            <button type="button" class="btn btn-outline-light">Search</button>
-          </form>
-        </div>
-       </nav>
-
-       <!-- CAROUSEL -->
-        <div id="demo" class="carousel slide" data-bs-ride="carousel">
-          <!-- INDICATORS -->
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-          </div>
-
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="https://wallpapers.com/images/featured/saitama-zkv7j9bv6z0ybezc.jpg" alt="img" class="d-block w-100">
-              <div class="carousel-caption text-danger">
-                <h2>Saitama</h2>
-                <p>Saitama is a fictional character who is the titular protagonist of the Japanese manga and Anime series One-Punch Man created by One.</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="https://c.wallhere.com/photos/0d/11/Saitama_One_Punch_Man_anime-1793239.jpg!d" alt="img" class="d-block w-100">
-              <div class="carousel-caption text-danger">
-                <h2>Saitama</h2>
-                <p>Saitama is a fictional character who is the titular protagonist of the Japanese manga and Anime series One-Punch Man created by One.</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="https://images.alphacoders.com/661/661650.jpg" alt="img" class="d-block w-100">
-              <div class="carousel-caption text-danger">
-                <h2>Saitama</h2>
-                <p>Saitama is a fictional character who is the titular protagonist of the Japanese manga and Anime series One-Punch Man created by One.</p>
-              </div>
-            </div>
-          </div>
-          
-          <!-- CONTROLS -->
-          <button type="button" class="carousel-control-prev" data-bs-target="#demo" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
-          <button type="button" class="carousel-control-next" data-bs-target="#demo" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+      <div class="row">
+        <div class="my-2 col">
+          <label for="otp" class="form-label">OTP:</label>
+          <input type="number" class="form-control-plaintext" id="otp" placeholder="form-control-plaintext">
         </div>
 
-        <!-- MODAL -->
-        <button type="button" class="btn btn-danger my-3" data-bs-toggle="modal" data-bs-target="#modal">More</button>
-
-        <div class="modal fade" id="modal">
-         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-up">
-           <div class="modal-content">
-             <!-- HEADER -->
-             <div class="modal-header">
-               <h4 class="modal-title">Lorem ipsum dolor sit.</h4>
-               <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-             </div>
-
-             <!-- BODY -->
-              <div class="modal-body">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, suscipit.
-              </div>
-
-              <!-- FOOTER -->
-               <div class="modal-footer">
-                 <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-               </div>
-           </div>
-         </div>
+        <div class="form-check col">
+          <input type="checkbox" class="form-check-input" id="remember">
+          <label for="remember" class="form-check-label">remember me</label>
         </div>
 
-        <!-- TOOLTIPS -->
-         <button type="button" class="btn btn-success" data-bs-toggle="tooltip" title="Its working!" data-bs-placement="bottom">Hover Me</button>
+        <input type="color" class="form-control form-control-color" value="#CCCCCC">
+      </div>
 
-         <script>
-            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-              return new bootstrap.Tooltip(tooltipTriggerEl)
-            })
-          </script>
+      <div class="my-2">
+        <label for="comment" class="form-label">Comment Here:</label>
+        <textarea name="comment" id="comment" rows="6" class="form-control"></textarea>
+      </div>
+    </form>
 
-         <!-- POPOVERS -->
-          <button type="button" class="btn btn-warning" data-bs-toggle="popover" title="Popover Heading" data-bs-content="popver content..." data-bs-trigger="hover" data-bs-placement="left">Click ME</button>
+    <!-- SELECTION -->
+    <form action="#">
+      <select class="form-select form-select-sm my-2">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
 
-          <script>
-            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-              return new bootstrap.Popover(popoverTriggerEl)
-            })
-          </script>
+      <select class="form-select form-select-sm my-2" multiple>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
 
-          <!-- TOAST -->
-          <button type="button" class="btn btn-primary" id="toastbtn">Toast</button>
+      <!-- SEARCH SELECTION -->
+      <label for="fruit" class="form-label">Search a Fruit:</label>
+      <input type="text" class="form-control" name="fruit" id="fruit" list="fruits">
+      <datalist id="fruits">
+        <option value="Apples"></option>
+        <option value="Bananas"></option>
+        <option value="Pineapples"></option>
+        <option value="Pears"></option>
+      </datalist>
 
-          <div class="toast">
-            <div class="toast-header">
-              <strong class="me-auto">Lorem, ipsum dolor.</strong>
-              <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
-            </div>
-            <div class="toast-body">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, fugiat?
-            </div>
-          </div>
+      <!-- CHECKBOXES -->
+      <label class="form-label mt-2">Select a gender:</label>
+      <div class="form-check form-switch">
+        <input type="checkbox" class="form-check-input" id="male" name="gender" value="male" checked>
+        <label for="male" class="form-check-label">Male</label>
+      </div>
 
-          <script>
-            document.getElementById("toastbtn").onclick = function() {
-              var toastElList = [].slice.call(document.querySelectorAll('.toast'))
-              var toastList = toastElList.map(function(toastEl) {
-                return new bootstrap.Toast(toastEl)
-              })
-              toastList.forEach(toast => toast.show())
-            }
-          </script>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="female" name="gender" value="female">
+        <label for="female" class="form-check-label">Female</label>
+      </div>
 
-          <!-- SCROLLSPY -->
-          <!-- SCROLLABLE AREA -->
-          <div data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50" style="position: relative;">
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="other" name="gender" value="other" disabled>
+        <label for="other" class="form-check-label">Other</label>
+      </div>
 
-            <!-- NAVBAR -->
-            <nav class="navbar navbar-expand-sm navbar-dark bg-dark justify-content-center">
-              <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="#section1">section 1</a></li>
-                <li class="nav-item"><a class="nav-link" href="#section2">section 2</a></li>
-              </ul>
-            </nav>
+      <!-- RANGE -->
+      <label for="age" class="form-label">Select age:</label>
+      <input type="range" class="form-range" id="age" step="1" min="18" max="60">
 
-            <!-- SECTIONS -->
-            <div class="bg-warning text-white" style="padding: 50px 10px;" id="section1">
-              <h3>Lorem, ipsum dolor.</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, ipsa.</p>
-            </div>
-            <div class="bg-danger text-white" style="padding: 50px 10px;" id="section2">
-              <h3>Lorem, ipsum dolor.</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, ipsa.</p>
-            </div>
-          </div>
+      <!-- INPUT GROUP -->
+      <div class="input-group input-group-lg">
+        <input type="text" class="form-control" placeholder="Your Email">
+        <span class="input-group-text">@gmail.com</span>
+      </div>
 
-        <!-- OFFCANVAS -->
-         <div class="offcanvas offcanvas-end offcanvas-lg text-bg-dark" id="offcanvas">
-          <div class="offcanvas-header">
-            <h3 class="offcanvas-title">Lorem ipsum dolor sit.</h3>
-            <button type="button" class="btn-close btn-close-white" data-bs-toggle="offcanvas"></button>
-          </div>
+      <!-- MULTI INPUTS -->
+      <div class="input-group my-2">
+        <span class="input-group-text">Full Name</span>
+        <input type="text" class="form-control" placeholder="John">
+        <input type="text" class="form-control" placeholder="Doe">
+      </div>
 
-          <div class="offcanvas-body">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa natus necessitatibus et non architecto veniam, aliquam voluptatum ducimus dolor expedita!</p>
-          </div>
-         </div>
+      <!-- MULTUPLE HELP TEXTS -->
+      <div class="input-group my-2">
+        <div class="input-group-text"><input type="checkbox"></div>
+        <div class="input-group-text"><input type="radio"></div>
+        <span class="input-group-text">Three</span>
+        <input type="text" class="form-control" placeholder="input">
+      </div>
 
-         <button type="button" class="btn btn-success d-lg-none my-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvas">OFFCANVAS SIDEBAR</button>
-  </body>
+      <div class="input-group my-2">
+        <button type="button" class="btn btn-outline-success">Agree</button>
+        <button type="button" class="btn btn-outline-danger">Disgree</button>
+        <input type="text" class="form-control" placeholder="input">
+        <button type="button" class="btn btn-primary">Search</button>
+      </div>
+
+      <!-- INPUT GROUP WITH DROPDOWN -->
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search Category..">
+        <button type="button" class="dropdown-toggle btn btn-secondary" data-bs-toggle="dropdown">Category</button>
+        <ul class="dropdown-menu">
+          <li><a href="#" class="dropdown-item">Category 1</a></li>
+          <li><a href="#" class="dropdown-item">Category 2</a></li>
+          <li><a href="#" class="dropdown-item">Category 3</a></li>
+          <li><a href="#" class="dropdown-item">Category 4</a></li>
+        </ul>
+      </div>
+    </form>
+  </div>
+</body>
+
 </html>
